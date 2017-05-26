@@ -13,6 +13,7 @@
     font-size: 25px;
     margin: 5px 5px;
     cursor: pointer;
+    
   }
   .block {
     display: inline-block;
@@ -30,9 +31,22 @@
     top: 0;
     left: 0;
     z-index: -1;
-    
   }
   </style>
+  <script>
+    var count = 1;
+    function setColor(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+            property.style.backgroundColor = "#4CAF50"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+        }
+    }
+</script>
   <title> Daniel Yu Spring Final </title>
 </head>
 <body>
